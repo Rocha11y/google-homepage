@@ -10,43 +10,58 @@
                 width: 272px;
                 height: 92px;
                 position: fixed;
-                top: 250px;
-                left: 820px;
+                top: 260px;
+                left: 823px;
             }
+
             .boxcontainer {
                 margin:auto;
                 margin-top:20%;
                 position: relative;
-                width: 550px;
-                height: 40px;
+                width: 560px;
+                height: 45px;
                 border: 1px solid #c3c5c781;
                 padding:0px 10px;
                 border-radius: 50px;
             }
+
             .elementscontainer {
                 width: 100%;
                 height: 100%;
                 vertical-align: middle;
             }
+
             .search {
                 border: none;
                 height: 100%;
                 width: 100%;
-                padding: 0px 5px;
-                border-radius: 50px;
+                padding-left: 34px;
+                padding-right: ;
+                border-radius: 50px; 
+                font-size: 16px;  
+                font-family: arial;  
             }
+
             .search:focus {
-                outline:none;
+                outline:none; 
             }
             .material-icons {
                 position: fixed;
-                left: 690px;
-                top: 390px;
+                left: 685px;
+                top: 394px;
                 font-size: 22px;
-                color:#27272760
-               
-                
+                color:#9aa0a6     
+                   
             }
+
+            #squaredots {
+                position: fixed;
+                left: 1750px;
+                top: 20px;
+                font-size: 24px;
+                color:#272727a9    
+            }
+        
            .buttonleft {
                 background-color: #f8f9fa;
                 border: none;
@@ -63,6 +78,7 @@
                 width: 6%;
                 height: 8px;
            }
+
            .buttonright {
                 background-color: #f8f9fa;
                 border: none;
@@ -76,38 +92,61 @@
                 cursor: pointer;   
                 width: 6%;
                 height: 8px;
-           }
-           ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                position: fixed;
-                top: 22px;
-                
-            }
-            li  {
-                display: inline;
-                
+            } 
+            
+            header {
+                display: flex;
+                justify-content: space-between;       
+                align-items: center;
+                margin-top: -516px;
+                margin-right: -180px;
+                margin-left: -230px;
+                padding: 30px 10%;
             }
 
-           li a {
-               color: #222;
+            .navlinks {
+                list-style: none;
+            }
+
+            .navlinks li {
+                display: inline-block;
+                padding: 0px 20px;
+                font-family: arial;
+                font-size: 14px;   
+            }  
+
+            .navlinks li:nth-child(3) {
+                margin-left: 1390px;
+                padding-left: 15px 0;        
+            }
+
+            .navlinks li a {
+                transition: all 0.3s ease 0s;
+                text-decoration: none;
+                color: #222;
+            }
+
+            .navlinks li a:hover {
+                text-decoration: underline;
+                color: #222;
+            }
+
+            button {
+               padding: 10px 27px;
+               background-color: #1a73e8;
+               border: none;
+               border-radius: 4px;
+               cursor: pointer;
+               transition: 250ms;
                font-family: arial;
-               font-size: 14px;
-               text-align: center;
-               padding: 14px 16px;
-               text-decoration: none;
+               font-size:14px;
+               color: white;
             }
-  
-          
-        
-           
-               
-                
-            
-           
-            
 
+            button:hover {
+                background-color: #2b7de9;
+                box-shadow: 0 1px 2px 0 rgba(66,133,244,0.3),0 1px 3px 1px rgba(66,133,244,0.15);
+            }
             
 
         </style>
@@ -123,28 +162,36 @@
                          <input type="text" placehonder="" class="search">
                     </td>
                     <td>
-                         <a href="#" <span class="material-icons">search
-                         </span>
-                        </a>
+                        <a href="#"><span class="material-icons">search</span></a> 
                      </td>
                  </tr>
             </table>
         </div>
-        <a href="#" class="buttonleft">Google Search</a>
-        <a href="#" class="buttonright">I'm Feeling Lucky</a>
+            <a href="#" class="buttonleft">Google Search</a>
+            <a href="#" class="buttonright">I'm Feeling Lucky</a>
         <header>
-            <ul>
-                <li><a href="default.asp">About</a></li>
-                <li><a href="news.asp">Store</a></li>
-                <li><a href="contact.asp">Gmail</a></li>
-                <li><a href="about.asp">Images</a></li>
-                <li><a href="about.asp">Google apps</a></li>
-                <li><a href="about.asp">Sign in</a></li>
-              </ul> 
+            <nav>
+                <ul class="navlinks">
+                    <li><a href="https://about.google/?fg=1&utm_source=google-GB&utm_medium=referral&utm_campaign=hp-header">About</a></li>
+                    <li><a href="https://store.google.com/GB/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-GB">Store</a></li>
+                    <li><a href="https://www.google.com/intl/en-GB/gmail/about/">Gmail</a></li>
+                    <li><a href="https://www.google.co.uk/imghp?hl=en&ogbl">Images</a></li>
+                    <li><a href="#"><span class="material-icons" id="squaredots">apps</span></a></li>    
+                </ul>
+            </nav>
+            <a class="signin" href="https://accounts.google.com/signin/v2/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><button>Sign in</button></a>
         </header>
 
             
-        
+        <!--<span class="material-icons-outlined">
+            apps
+            </span>
+
+        <span class="material-icons-outlined">
+        search
+        </span>    
+        -->
+
         
 
         
